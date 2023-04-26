@@ -1,6 +1,6 @@
 # Dokerfile to create the container for the ERAU CS 399 Server
 FROM python:3.11
-MAINTAINER Wolf Paulus <wolf@paulus.com>
+MAINTAINER Molly Ruley <erau02.techcasitaproductions.com>
 
 RUN apt-get update && \
     apt-get install -yq tzdata && \
