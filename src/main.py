@@ -6,7 +6,10 @@ Author: Molly Ruley
 
 def is_square(num: int) -> bool:
     """Return True if num is a perfect square, False otherwise."""
-    return (num ** .5).is_integer()
+    if num == 0:
+        return False
+    else:
+        return (num ** .5).is_integer()
 
 
 def is_square_str(num: str) -> str:
