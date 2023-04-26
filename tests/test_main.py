@@ -1,6 +1,6 @@
 """
 Test the main module.
-Author: Wolf Paulus (wolf@paulus.com)
+Author: Molly Ruley (erau02.techcasitaproductions.com)
 """
 from unittest import TestCase
 from main import is_square, is_square_str
