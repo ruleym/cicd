@@ -39,7 +39,7 @@ class MyServer(BaseHTTPRequestHandler):
                     # read the html template and fill in the parameters: path, time and result
                     content = f.read().format(path=self.path, time=asctime(), result=result)
         else:
-            status, content = 404, "Not Found"
+            status, content, content_type = 404, "Not Found", "text/html"
         self.send_response(status)
         self.send_header("Content-type", content_type)
         self.end_headers()
